@@ -1,0 +1,63 @@
+.analyzer {
+    background-color: rgba(72, 14, 125, 0);
+    border-radius: 50%;
+}
+
+.ocean {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.wave {
+    background: #6d43ec repeat-x;
+    opacity: 40%;
+    position: absolute;
+    border-radius: 25%;
+    width: 90%;
+    height: 90%;
+    animation: light-swell 3s infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    background: rgba(73, 42, 187, 0.75) repeat-y;
+    border-radius: 40%;
+    left: -2px;
+    top: -2px;
+    animation: swell 7s ease -1.28s infinite;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    rotate: 30deg;
+}
+
+.analyzer-btn {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+
+
+@keyframes swell {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+}
+
+@keyframes light-swell {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}

@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export interface IUseSpeechRecognition {
-  transcript: string;
-  isListening: boolean;
-  isSupported: boolean;
-  error: string | null;
-  startListening: () => void;
-  stopListening: () => void;
-}
+import { IUseSpeechRecognition } from './useSpeechRecognition.types';
 
 export const useSpeechRecognition = (): IUseSpeechRecognition => {
   const [isSupported, setIsSupported] = useState(false);
