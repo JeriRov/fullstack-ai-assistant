@@ -21,6 +21,7 @@ export const AudioSpectrum: React.FC = () => {
   } = useAudioAnalyzer();
 
   const {
+    transcript,
     isListening: isSpeechListening,
     startListening: startSpeechListening,
     stopListening: stopSpeechListening,
@@ -73,6 +74,7 @@ export const AudioSpectrum: React.FC = () => {
           </div>
         </div>
       </button>
+      <p>{transcript}</p>
     </div>
   );
 };
