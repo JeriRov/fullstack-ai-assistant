@@ -2,12 +2,12 @@ import React from 'react';
 
 import './app.css';
 
-import { AudioSpectrum } from './components/AudioSpectrum/AudioSpectrum';
+import { Assistant } from 'pages/Assistant/Assistant';
 
 const App: React.FC = () => {
   return (
     <div className={'app'}>
-      <AudioSpectrum />
+      <Assistant />
     </div>
   );
 };
